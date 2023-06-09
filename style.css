@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+
+* {
+	margin:0;
+	padding:0;
+	font-family: 'Quicksand', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+.float-left {
+	float:left;
+}
+
+.container {
+	width: 1140px;
+	margin:0 auto;
+}
+
+.bg-light {
+	background-color: #f5f5f5;
+}
+.clearfix {
+	clear:both;
+}
+.page-login {
+	width: 100%;
+	height: 100vh;
+	background: url(bg.png);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.box {
+	border:1px solid #ff0000;
+	background-color: #ff0000;
+	border-radius: 50px;
+}
+
+
+.box-body {
+	padding:16px;
+}
+
+
+form {
+	margin:15px 0;
+}
+.form-group {
+	margin-bottom: 15px;
+}
+
+.form-group label {
+	display: block;
+	margin-bottom: 8px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+.form-group .input-control {
+	padding:10px 16px;
+	width: 100%;
+	box-sizing: border-box;
+	font-size: 16px;
+	border-radius: 10px;
+}
+
+.box-login {
+	width: 300px;
+	align-items: center;
+}
+
+.btn {
+	border: 1px solid #ddd;
+	padding:8px 16px;
+	font-size: 16px;
+	align-items: center;
+}
+
+.btn:hover {
+	cursor: pointer;
+}
+
+
+.text-center {
+	text-align:center !important;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+.allert {
+	padding:10px 16px;
+	border:1px solid;
+}
+
+.allert-error {
+	background-color: #FABEC0;
+	border: 1px solid #E43040;
+	color:#E4E3D4 ;
+}
+
+.navbar {
+	height: 60px;
+	width: 100%;
+	background-color: #F51720;
+	position: fixed;
+	top: 0;
+	z-index: 1000;
+}
+
+.navbar a {
+	color: #fff;
+}
+.nav-brand {
+	display: inline-block;
+	padding:15px 0;
+	margin-right: 16px;
+}
+
+.nav-menu {
+	display:  flex;
+	list-style: none;
+}
+
+.nav-menu li a {
+	padding:20px;
+	display: inline-block;
+}
+
+.nav-menu li .dropdown {
+	border:1px solid #ddd;
+	background-color: #fff;
+	list-style: none;
+	position: absolute;
+	display: none;
+}
+
+.nav-menu li:hover {
+	background-color: #B31312;
+}
+.nav-menu li .dropdown a {
+	color: #333;
+}
+
+.nav-menu li .dropdown-li:hover a {
+	color: #fff;
+}
+
+.nav-menu li:hover .dropdown {
+	display: block;
+}
+
+.content {
+	padding:80px 0 30px 0;
+}
+
+.footer {
+	padding:20px
+}
+.read .create-contact {
+	display: inline-block;
+	text-decoration: none;
+	background-color: #eb0000;
+	font-weight: bold;
+	font-size: 14px;
+	color: #FFFFFF;
+	padding: 10px 15px;
+	margin: 15px 0;
+}
+.read .create-contact:hover {
+	background-color: #eb0000;
+}
+.read .pagination {
+	display: flex;
+	justify-content: flex-end;
+}
+.read .pagination a {
+	display: inline-block;
+	text-decoration: none;
+	background-color: #a5a7a9;
+	font-weight: bold;
+	color: #FFFFFF;
+	padding: 5px 10px;
+	margin: 15px 0 15px 5px;
+}
+.read .pagination a:hover {
+	background-color: #999b9d;
+}
+.read table {
+	width: 100%;
+	padding-top: 30px;
+	border-collapse: collapse;
+}
+.read table thead {
+	background-color: #ebeef1;
+	border-bottom: 1px solid #d3dae0;
+}
+.read table thead td {
+	padding: 10px;
+	font-weight: bold;
+	color: #767779;
+	font-size: 14px;
+}
+.read table tbody tr {
+	border-bottom: 1px solid #d3dae0;
+}
+.read table tbody tr:nth-child(even) {
+	background-color: #fbfcfc;
+}
+.read table tbody tr:hover {
+	background-color: #376ab7;
+}
+.read table tbody tr:hover td {
+	color: #FFFFFF;
+}
+.read table tbody tr:hover td:nth-child(1) {
+	color: #FFFFFF;
+}
+.read table tbody tr td {
+	padding: 10px;
+}
+.read table tbody tr td:nth-child(1) {
+	color: #a5a7a9;
+}
+.read table tbody tr td.actions {
+	padding: 8px;
+	text-align: right;
+}
+.read table tbody tr td.actions .edit, .read table tbody tr td.actions .trash {
+	display: inline-flex;
+	text-align: right;
+	text-decoration: none;
+	color: #FFFFFF;
+	padding: 10px 12px;
+}
+.read table tbody tr td.actions .trash {
+	background-color: #b73737;
+}
+.read table tbody tr td.actions .trash:hover {
+	background-color: #a33131;
+}
+.read table tbody tr td.actions .edit {
+	background-color: #37afb7;
+}
+.read table tbody tr td.actions .edit:hover {
+	background-color: #319ca3;
+}
+.update form {
+	padding: 15px 0;
+	display: flex;
+	flex-flow: wrap;
+}
+.update form label {
+	display: inline-flex;
+	width: 400px;
+	padding: 10px 0;
+	margin-right: 25px;
+}
+.update form input {
+	padding: 10px;
+	width: 400px;
+	margin-right: 25px;
+	margin-bottom: 15px;
+	border: 1px solid #cccccc;
+}
+.update form input[type="submit"] {
+	display: block;
+	background-color: #eb0000;
+	border: 0;
+	font-weight: bold;
+	font-size: 14px;
+	color: #FFFFFF;
+	cursor: pointer;
+	width: 200px;
+  margin-top: 15px;
+}
+.update form input[type="submit"]:hover {
+	background-color: #eb0000;
+}
+
